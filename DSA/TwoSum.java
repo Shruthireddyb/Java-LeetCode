@@ -1,4 +1,4 @@
-class Solution {
+class TwoSum {
     public int[] twoSum(int[] n, int target) {
         int arr[]=new int[2];
         for(int i=0;i<n.length;i++){

@@ -1,4 +1,4 @@
-class Solution {
+class RotateArray {
     public void rotate(int[] n, int k) {
       if(n.length==0)return;
         k%=n.length;
@@ -17,7 +17,7 @@ class Solution {
         }
       }
         public static void main(String[] args){
-          Solution s = new Solution();
+          RotateArray s = new RotateArray();
         int[] n = {1, 2, 3, 4, 5, 6, 7};
         int k = 3;
         s.rotate(n, k);
