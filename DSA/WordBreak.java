@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Set;
 
 public class WordBreak {
-  public boolean wordBreak(String s, List<String> wordDict) {
+    public boolean wordBreak(String s, List<String> wordDict) {
         if (s.length() == 0) return true;
         boolean[] dp = new boolean[s.length() + 1];
         dp[0] = true;
@@ -22,9 +22,6 @@ public class WordBreak {
         return dp[n];
     }
 }
-
-// Faster Solution: O(N * M), N is the length 
-// of the string, M is the number of the words in wordDict
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
         int n = s.length();
