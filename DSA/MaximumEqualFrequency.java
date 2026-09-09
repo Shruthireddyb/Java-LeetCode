@@ -1,5 +1,5 @@
 public class MaximumEqualFrequency {
-  public int maxEqualFreq(int[] nu) {
+    public int maxEqualFreq(int[] nu) {
         int[] count = new int[100001];
         int[] freq = new int[100001];
 
@@ -18,7 +18,7 @@ public class MaximumEqualFrequency {
             count[nu[i]]--;
 
             if (count[nu[i - 1]] * freq[count[nu[i - 1]]] == i) {
-              return i + 1;
+            return i + 1;
             }
         }
 
